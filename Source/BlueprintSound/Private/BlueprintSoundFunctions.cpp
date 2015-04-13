@@ -22,3 +22,21 @@ float UBlueprintSoundFunctions::GetSoundClassVolume(USoundClass* SoundClass)
 	
 	return 0.0f;
 }
+
+void UBlueprintSoundFunctions::SetSoundClassPitch(USoundClass* SoundClass, float Pitch)
+{
+	if (SoundClass)
+	{
+		SoundClass->Properties.Pitch = Pitch;
+	}
+}
+
+float UBlueprintSoundFunctions::GetSoundClassPitch(USoundClass* SoundClass)
+{
+	if (SoundClass)
+	{
+		return SoundClass->Properties.Pitch;
+	}
+	
+	return 0.0f;
+}

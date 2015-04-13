@@ -17,4 +17,10 @@ public:
 	
 	UFUNCTION(BlueprintPure, meta = (Keywords = "sound sfx music audio volume"), Category = Sound)
 	static float GetSoundClassVolume(USoundClass* SoundClass);
+
+	UFUNCTION(BlueprintCallable, meta = (Keywords = "sound sfx music audio pitch"), Category = Sound)
+	static void SetSoundClassPitch(USoundClass* SoundClass, float Pitch);
+	
+	UFUNCTION(BlueprintPure, meta = (Keywords = "sound sfx music audio pitch"), Category = Sound)
+	static float GetSoundClassPitch(USoundClass* SoundClass);
 };
