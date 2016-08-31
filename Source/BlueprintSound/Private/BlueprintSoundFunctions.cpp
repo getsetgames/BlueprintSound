@@ -5,6 +5,12 @@
 
 #include "BlueprintSoundPrivatePCH.h"
 
+#if PLATFORM_IOS
+#include <AVFoundation/AVAudioSession.h>
+#elif PLATFORM_ANDROID
+
+#endif
+
 void UBlueprintSoundFunctions::SetSoundClassVolume(USoundClass* SoundClass, float Volume)
 {
 	if (SoundClass)
@@ -39,4 +45,15 @@ float UBlueprintSoundFunctions::GetSoundClassPitch(USoundClass* SoundClass)
 	}
 	
 	return 0.0f;
+}
+
+bool UBlueprintSoundFunctions::IsExternalBackgroundSoundActive()
+{
+#if PLATFORM_IOS
+	return [[AVAudioSession sharedInstance] isOtherAudioPlaying];
+#elif PLATFORM_ANDROID
+
+#endif
+	
+	return false;
 }

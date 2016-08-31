@@ -23,4 +23,7 @@ public:
 	
 	UFUNCTION(BlueprintPure, meta = (Keywords = "sound sfx music audio pitch"), Category = Sound)
 	static float GetSoundClassPitch(USoundClass* SoundClass);
+
+	UFUNCTION(BlueprintPure, meta = (Keywords = "sound sfx music audio background"), Category = Sound)
+	static bool IsExternalBackgroundSoundActive();
 };
