@@ -52,7 +52,8 @@ bool UBlueprintSoundFunctions::IsExternalBackgroundSoundActive()
 #if PLATFORM_IOS
 	return [[AVAudioSession sharedInstance] isOtherAudioPlaying];
 #elif PLATFORM_ANDROID
-
+	extern bool AndroidThunkCpp_IsMusicActive();
+	return AndroidThunkCpp_IsMusicActive();
 #endif
 	
 	return false;
