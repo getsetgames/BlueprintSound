@@ -6,7 +6,7 @@
 #include "BlueprintSoundPrivatePCH.h"
 
 #if PLATFORM_IOS
-#include <AVFoundation/AVAudioSession.h>
+#import <AVFoundation/AVAudioSession.h>
 #elif PLATFORM_ANDROID
 
 #endif
