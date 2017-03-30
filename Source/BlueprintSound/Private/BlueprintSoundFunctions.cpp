@@ -3,6 +3,7 @@
 //  Copyright (c) 2015 Get Set Games Inc. All rights reserved.
 //
 
+#include "BlueprintSoundFunctions.h"
 #include "BlueprintSoundPrivatePCH.h"
 
 #if PLATFORM_IOS
