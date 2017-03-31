@@ -5,6 +5,9 @@
 
 #pragma once
 
+#include "UObject/Object.h"
+#include "UObject/ScriptMacros.h"
+#include "Sound/SoundClass.h"
 #include "BlueprintSoundFunctions.generated.h"
 
 UCLASS(NotBlueprintable)

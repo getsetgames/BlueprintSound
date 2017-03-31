@@ -5,6 +5,7 @@
 
 #pragma once
 
+#include "Components/ActorComponent.h"
 #include "BackgroundSoundLifecycleComponent.generated.h"
 
 UCLASS(ClassGroup=Advertising, HideCategories=(Activation, "Components|Activation", Collision), meta=(BlueprintSpawnableComponent))
