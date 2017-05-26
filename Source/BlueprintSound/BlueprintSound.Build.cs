@@ -7,7 +7,7 @@ namespace UnrealBuildTool.Rules
 {
 	public class BlueprintSound : ModuleRules
 	{
-		public BlueprintSound(TargetInfo Target)
+		public BlueprintSound(ReadOnlyTargetRules Target) : base(Target)
 		{
 			PublicIncludePaths.AddRange(
 				new string[] {
